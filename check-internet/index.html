@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p id="status"></p>
+  <script>
+    window.setInterval(function () {
+      status();
+    }, 1000);
+    window.onload = function () {
+      status();
+    }
+    function status() {
+      if (navigator.onLine) {
+        document.getElementById("status").innerHTML = "Online";
+      } else {
+        document.getElementById("status").innerHTML = "Ofline";
+      }
+    }
+  </script>
+</body>
+
+</html>
