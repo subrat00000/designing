@@ -1,0 +1,48 @@
+input {
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  padding: 10px;
+  width: 40%;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  height: 20px;
+  width: 40%;
+  border: 1px solid lightgrey;
+}
+.abcd::-webkit-datetime-edit-fields-wrapper {
+  display: block;
+}
+.abcd::-webkit-datetime-edit-text {
+  display: inline-block;
+}
+.abcd::-webkit-datetime-edit-minute-field {
+  display: inline-block;
+}
+input::-webkit-datetime-edit-fields-wrapper {
+  display: none;
+}
+input::-webkit-datetime-edit-text {
+  display: none;
+}
+input::-webkit-datetime-edit-minute-field {
+  display: none;
+}
+#para {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  z-index: 1;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.mystyle {
+  display: none;
+}

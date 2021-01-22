@@ -33,7 +33,7 @@ var newInput = function () {
     class: "input-group-text",
     text: check()
   })
-  var input = $("<input>", {
+  var input = $("<input type='number'>", {
     class: "form-control"
   });
 
